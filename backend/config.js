@@ -1,0 +1,3 @@
+//EXPORT IT AND IMPORT IT IN THE INDEX.JS FILE
+export const PORT = 5555; 
+
