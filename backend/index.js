@@ -14,13 +14,13 @@ app.use(express.json());
 
 //Middleware for handling CORS policy ...Two options
 //option one... is to allow all Origins with Default of cors(*)
-// app.use(cors());
+app.use(cors());
 //option two... is to allow Custom Origins
-app.use({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type']
-});
+// app.use({
+//     origin: 'http://localhost:3000',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type']
+// });
 
 //Now create a event listener to this app at that port.
 // app.listen(PORT, () => {
